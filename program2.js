@@ -4,13 +4,10 @@ const decodeTheRing = function (s, p) {
     const memo = new Map();
 
     const isMatch = (i, j) => {
-      // Create unique key for memoization
       const key = `${i},${j}`;
       
-      // Return cached result if available
       if (memo.has(key)) return memo.get(key);
       
-      // Base cases
       if (j === p.length) return i === s.length;
       if (i > s.length) return false;
       
