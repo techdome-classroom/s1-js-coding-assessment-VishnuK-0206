@@ -13,12 +13,9 @@ const decodeTheRing = function (s, p) {
       
       let result = false;
       
-      // Handle star pattern
       if (p[j] === '*') {
-          // Star can match zero characters
           result = isMatch(i, j + 1);
           
-          // Star can match one or more characters
           if (i < s.length) {
               result = result || isMatch(i + 1, j);
           }
