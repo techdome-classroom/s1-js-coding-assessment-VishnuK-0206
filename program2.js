@@ -7,6 +7,7 @@ const decodeTheRing = function (s, p) {
       const key=`${i},${j}`;
 
       if (memo.has(key)) return memo.get(key);
+      
     }
 
 
