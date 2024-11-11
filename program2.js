@@ -6,7 +6,7 @@ const decodeTheRing = function (s, p) {
     const isMatch=(i,j)=>{
       const key=`${i},${j}`;
 
-      if (memo.has(key))
+      if (memo.has(key)) return memo.get(key);
     }
 
 
