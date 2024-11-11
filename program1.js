@@ -27,6 +27,8 @@ const getTotalIsles = function (grid) {
       exploreIsland(row, col + 1); // right
   };
 
+  
+
 };
 
 module.exports = getTotalIsles;
