@@ -4,7 +4,7 @@ const decodeTheRing = function (s, p) {
     const memo = new Map();
 
     const isMatch=(i,j)=>{
-      
+      const key=``
     }
 
 
