@@ -20,12 +20,11 @@ const decodeTheRing = function (s, p) {
               result = result || isMatch(i + 1, j);
           }
       }
-      // Handle question mark or exact character match
+
       else if (i < s.length && (p[j] === '?' || p[j] === s[i])) {
           result = isMatch(i + 1, j + 1);
       }
       
-      // Cache and return result
       memo.set(key, result);
       return result;
   };
