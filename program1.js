@@ -27,7 +27,17 @@ const getTotalIsles = function (grid) {
       exploreIsland(row, col + 1); // right
   };
 
-  
+  for (let row = 0; row < rows; row++) {
+    for (let col = 0; col < cols; col++) {
+        // If we find an unvisited landmass, explore it and increment count
+        if (grid[row][col] === 'L') {
+            exploreIsland(row, col);
+            islandCount++;
+        }
+    }
+}
+
+return islandCount;
 
 };
 
